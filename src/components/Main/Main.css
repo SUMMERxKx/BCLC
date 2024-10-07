@@ -1,0 +1,95 @@
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4; /* Light gray background */
+  color: #003764; /* BCLC dark blue text */
+  margin: 0;
+  padding: 0;
+}
+
+/* Chatbot container */
+.chatbot-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  background: #ffffff; /* White background */
+  border: 2px solid #003764; /* BCLC dark blue border */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 55, 100, 0.1);
+  overflow: hidden;
+}
+
+/* Header styling */
+.chatbot-header {
+  background-color: #003764; /* BCLC dark blue */
+  color: #ffffff; /* White text */
+  padding: 15px;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Chat window */
+.chat-window {
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+  height: 400px;
+  overflow-y: scroll;
+  border-top: 1px solid #003764; /* BCLC dark blue border */
+  border-bottom: 1px solid #003764; /* BCLC dark blue border */
+}
+
+/* Message styling */
+.user-message, .bot-message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.user-message {
+  background-color: #e6f3ff; /* Light blue */
+  color: #003764; /* BCLC dark blue text */
+  text-align: right;
+}
+
+.bot-message {
+  background-color: #f0f8ff; /* Lighter blue background */
+  color: #003764; /* BCLC dark blue text */
+}
+
+/* Input area styling */
+.input-area {
+  display: flex;
+  border-top: 1px solid #003764; /* BCLC dark blue border */
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  font-size: 1em;
+  outline: none;
+  background-color: #ffffff; /* White background */
+  color: #003764; /* BCLC dark blue text */
+}
+
+.input-area button {
+  background-color: #fdd303; /* BCLC yellow */
+  color: #003764; /* BCLC dark blue text */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.input-area button:hover {
+  background-color: #ffc600; /* Darker yellow on hover */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .chatbot-container {
+    width: 95%;
+  }
+}
